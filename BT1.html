@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    </style>
+</head>
+<body>
+<input type="text" id="input"/>
+<button type="button" onclick="Tinhtuoi()">Tính tuổi</button>
+<br>
+<p id="kq">Năm</p>
+<script>
+    function Tinhtuoi() {
+        console.log('goi fuction ')
+        let a = document.getElementById('input').value;
+        console.log('input ---> ', input)
+        console.log('a ==== ', a)
+        let b = a % 10;
+        let c = a % 12;
+        let Result = '';
+        let Result1 = '';
+        switch (b) {
+            case 0:
+                Result = 'Canh';
+                break;
+            case 1:
+                Result = 'Thân';
+                break;
+            case 2:
+                Result = 'Nhâm';
+                break;
+            case 3:
+                Result = 'Qúy';
+                break;
+            case 4:
+                Result = 'Giap';
+                break;
+            case 5:
+                Result = 'At';
+                break;
+            case 6:
+                Result = 'Bính';
+                break;
+            case 7:
+                Result = 'Đinh';
+                break;
+            case 8:
+                Result = 'Mậu';
+                break;
+            case 9:
+                Result = 'Kỷ';
+
+        }
+        switch (c) {
+            case 0:
+                Result1 = ' Thân';
+                break;
+            case 1:
+                Result1 = ' Dậu';
+                break;
+            case 2:
+                Result1 = ' Tuất';
+                break;
+            case 3:
+                Result1 = 'Hợi';
+                break;
+            case 4:
+                Result1 = ' Tý';
+                break;
+            case 5:
+                Result1 = ' Sữu';
+                break;
+            case 6:
+                Result1 = ' Dần';
+                break;
+            case 7:
+                Result1 = 'Mão';
+                break;
+            case 8:
+                Result1 = ' Thìn';
+                break;
+            case 9:
+                Result1 = ' tỵ';
+                break;
+            case 10:
+                Result1 = ' ngọ';
+                break;
+        }
+        document.getElementById('kq').innerHTML = Result+''+Result1;
+
+
+    }
+
+
+</script>
+
+</body>
+</html>
